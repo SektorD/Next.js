@@ -14,10 +14,12 @@ export default function kabinet() {
         Кабинет
       </div>
 
-      <form>
-        <input></input>
-        <input></input>
-        <button>Войти</button>
+      <form className={styles.form}>
+        Логин
+        <input type="email" className={styles.input}></input>
+        Пароль
+        <input type="password" className={styles.input}></input>
+        <button className={styles.button}>Войти</button>
       </form>
     </main>
   );
