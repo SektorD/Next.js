@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import Menu from "@/components/Menu/Menu";
+import { Auth } from "./components/Auth";
 
 export const metadata = {
   title: 'Кабинет',
@@ -14,13 +15,8 @@ export default function kabinet() {
         Кабинет
       </div>
 
-      <form className={styles.form}>
-        Логин
-        <input type="email" className={styles.input}></input>
-        Пароль
-        <input type="password" className={styles.input}></input>
-        <button className={styles.button}>Войти</button>
-      </form>
+      <Auth />
+
     </main>
   );
 }
